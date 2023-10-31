@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --color-primario: #AED6B3;
+    --color-secundario: #F5F2EB;
+    --color-text-primario: black ;
+    --color-text-secundario: #797979;
+    --color-light-box: white;
+}
+
+/* NORMALIZAR */
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--color-text-primario)
+}
+
+body{
+    background-color: var(--color-secundario);
+}
+
+header{
+    display: flex;
+    justify-content: end;
+    gap: 12px;
+    padding: 20px 70px;
+}
+
+.btn_primary{
+    background-color: var(--color-primario);
+    border: none;
+    border-radius: 4px;
+    padding: 12px 18px;
+    font-weight: 500;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}   
+
+.btn_secondary{
+    background-color: transparent;
+    border: 1px solid var(--color-text-primario);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    border-radius: 40px;
+    padding: 12px 18px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.btn_terciary{
+    background-color: transparent;
+    border: none;
+    padding: 12px 18px;
+    font-weight: 500;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    border: none;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    align-items: center;
+}
+.form_login_container{
+    display: flex;
+    background-color: var(--color-light-box);
+    padding: 58px 52px 47px 52px;
+    border-radius: 30px;
+    flex-direction: column;
+    
+}
+
+.form_login_container form{
+    display: flex;
+    flex-direction: column;
+}
