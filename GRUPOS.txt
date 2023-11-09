@@ -8,6 +8,8 @@ pablo sebastian di pietro
 Tiago Pereyra
 fede minatta
 
+REPO: https://github.com/Another818/group-1-for-react
+
 Grupo 2:
 
 Facundo Tabares, 
@@ -15,6 +17,8 @@ Agustin Montani,
 Valentino Cuchi Zanini,
 Ivan Sortino,
 Joaquin Rodriguez.
+
+REPO: https://github.com/Ivan-Sortino/Tp_final_React
 
 Grupo 3:
 
@@ -24,6 +28,8 @@ Dylan Vargas,
 Samuel Belmonte
 Pauli ?
 
+REPO:
+
 Grupo 4:
 
 Facundo Pepino
@@ -31,6 +37,8 @@ Jorge Lesme Aquino
 Javier Nicolas Maita
 Valentin Ferreyra
 Matias Pretzsch
+
+REPO:
 
 Grupo 5:
 
@@ -40,6 +48,8 @@ Miguel Acosta
 Matias Valtolina
 Mateo Lucero
 
+REPO:
+
 Grupo 6:
 
 Fabricio Alcedo
@@ -48,9 +58,11 @@ Lautaro Gutierrez
 Francis Alcalde Socole
 Camila Virginia Pais
 
+REPO:
+
 Grupo 7:
 
- Valeria lysikova
+Valeria lysikova
 
 
 
