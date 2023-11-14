@@ -1,5 +1,5 @@
 import React from 'react'
-import { Footer, Header, Product } from './components'
+import { Archivo, Footer, Header, Product } from './components'
 
 
 
@@ -59,19 +59,21 @@ const App = () => {
       <button onClick={() => handlePickAColor("Azul")}>Azul</button>
 
       {archivos.map((archivo) => (
-        <div key={archivo.id}>
-          <h3>{archivo.nombre} . {archivo.extension} </h3>
-          <span>{archivo.tipo}</span>
-          <span>{archivo.peso}</span>
-          <span>{archivo.creadoEn}</span>
-          <hr/>
-      </div>
+        <Archivo archivo={archivo} key={archivo.id}/>
       ))}
     </div>
   )
 }
 
 export default App
+
+/* Una vez mapeada la lista de cosas vamos a crear un Componente para representar el item que mapeamos
+Por ejemplo:
+
+array.map((element) =>(
+  <Element title={} price={} key={}/>
+))
+*/
 
 /* 
 Crear 3 divs, uno rojo, otro amarillo y otro verde
