@@ -61,6 +61,8 @@ const App = () => {
       {archivos.map((archivo) => (
         <Archivo archivo={archivo} key={archivo.id}/>
       ))}
+
+      <Product  nombre={'tv samsung 80"'} precio={800} favorito={false}/>
     </div>
   )
 }
