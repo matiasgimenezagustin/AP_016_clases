@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Archivo, Footer, Header, Product } from './components'
 
 
@@ -36,6 +36,24 @@ const App = () => {
     },
   ]
 
+  const productos = [
+    {
+      nombre: 'pc gamer 500gb',
+      precio: 400,
+      id: 0
+    },
+    {
+      nombre: 'tv samsung 80"',
+      precio: 800,
+      id: 1
+    },
+    {
+      nombre: 'Velador de cars',
+      precio: 9000,
+      id: 2
+    }
+  ]
+
 
   const handlePickAColor = async (color) => {
     
@@ -47,6 +65,32 @@ const App = () => {
     }
     alert('has seleccionado el color: ' + color)
   }
+  const [cart, setCart] = useState([])
+
+  const addProductToCart = (producto, quantity) =>{
+    if(cart.some(productfromCart => productfromCart.id === producto.id)){
+      setCart(cart.map((productFromCart) =>{
+        if(productFromCart.id === producto.id){
+          productFromCart.quantity += quantity
+        }
+        return productFromCart
+      }))
+    }
+    else{
+      setCart([...cart, {...producto, quantity }])
+    }
+
+  }
+
+  const getTotalCart = () =>{
+    let total = 0
+    cart.forEach(producto =>{
+      total += producto.precio * producto.quantity
+    })
+    return total
+  }
+
+  console.log(cart)
   return (
     <div >
       <button onClick={saludar}>Click me</button>
@@ -61,8 +105,36 @@ const App = () => {
       {archivos.map((archivo) => (
         <Archivo archivo={archivo} key={archivo.id}/>
       ))}
+      {
+        productos.map(producto => (
+          <Product  nombre={producto.nombre} precio={producto.precio} favorito={false} id={producto.id} addProductToCart={addProductToCart}/>
+        ))
+      }
 
-      <Product  nombre={'tv samsung 80"'} precio={800} favorito={false}/>
+
+      <h1>Carrito</h1>
+      <div>
+
+        {
+          cart.length == 0 
+          ? <h2>Aun no has comprado productos</h2>
+          : 
+          <>
+            {
+              cart.map(producto =>(
+                <div>
+                  <h3>{producto.nombre}</h3>
+                  <span>Precio: ${producto.precio}</span>
+                  <h4>Cantidad comprada: {producto.quantity}</h4>
+                  <hr/>
+                </div>
+              ))
+            }
+            <h3>Total: ${getTotalCart()}</h3>
+          </>
+        }
+      </div>
+      
     </div>
   )
 }

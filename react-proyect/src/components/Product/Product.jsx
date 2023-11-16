@@ -30,7 +30,23 @@ const Product = (propiedades) => {
         setCounterVisibility(false)
         setCounter(0)
     }
-    
+
+    const handleIncrementCart = () =>{
+        setCounter(counter + 1)
+    }   
+    const handleDecrementCart = () =>{
+        if(counter !== 1){
+            setCounter(counter - 1)
+        }
+        else{
+            cancelCart()
+        }
+    }
+
+    const handleConfirm = () =>{
+        propiedades.addProductToCart({nombre: propiedades.nombre, precio: propiedades.precio, id: propiedades.id}, counter)
+        cancelCart()
+    }
     
     return (
         <div>
@@ -42,11 +58,11 @@ const Product = (propiedades) => {
                 counterVisibility 
                 ? (
                     <div>
-                    <button>-</button>
-                    <span>1</span>
-                    <button>+</button>
+                    <button onClick={handleDecrementCart}>-</button>
+                    <span>{counter}</span>
+                    <button onClick={handleIncrementCart}>+</button>
                     <button onClick={cancelCart}>Cancelar</button>
-                    <button>Confirmar</button>
+                    <button onClick={handleConfirm}>Confirmar</button>
                 </div>
                 )
                 :<button onClick={addToCart}>Agregar al carrito</button>
