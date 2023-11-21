@@ -28,7 +28,7 @@ Dylan Vargas,
 Samuel Belmonte
 Paulina sivana San Martin
 
-REPO:
+REPO: https://github.com/MarianelaOrtiz/Integrador-grupo3.git
 
 Grupo 4:
 
@@ -38,18 +38,18 @@ Javier Nicolas Maita
 Valentin Ferreyra
 Matias Pretzsch
 
-REPO:
+REPO: https://github.com/JorgeLesme683/reactTPF
 
 Grupo 5:
 
 Alan Moura
-Nicolas Herner
+Nicolas Herner (!)
 Miguel Acosta
 Matias Valtolina
 Mateo Lucero
 
-REPO:
-
+REPO: https://github.com/Noise-arch/ap-react-grupo-5
+ 
 Grupo 6:
 
 Fabricio Alcedo
@@ -91,3 +91,8 @@ https://utn.zoom.us/rec/share/LGFNiKJ-4Yh3P04O5EKDwctoefMOhmABYIHGt4o3LY7nCQp1v6
 CLASE 6:
 
 https://utn.zoom.us/rec/share/b8HMTicXr5wqJDBkUeYU2cB4qlLvMeXvja6-VeYVGD4jPhA7Q8U0_47RRZojWXd0.sC-A4JgjzSzrwwP_
+
+
+CLASE 7:
+
+https://utn.zoom.us/rec/share/QYMZBzDrQcGY_0W0-z6sf3JDS7oFOxfdpqWg8Bh4_fPUIpXUlu7EDwdbYjLYvRV9.YXHEpQNfQlsAJ2dI
